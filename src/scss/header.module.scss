@@ -1,0 +1,10 @@
+header {
+  position: absolute;
+  padding: 28px 0;
+  z-index: 10;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+}

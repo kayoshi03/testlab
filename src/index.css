@@ -1,0 +1,129 @@
+@import url("./font/Graphik LCG/stylesheet.css");
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-family: 'Graphik LCG', sans-serif;
+}
+
+:root {
+    --success-color: rgba(37, 205, 130, 1);
+    --error-color: rgba(241, 54, 54, 1);
+    --primary-color: rgba(42, 108, 234, 1);
+    --hover-color: rgba(57, 125, 255, 1);
+    --disabled-color: rgba(171, 202, 230, 1);
+    --white-color: rgba(255, 255, 255, 1);
+    --extraligth-color: rgba(246, 248, 250, 1);
+    --light-color: rgba(236, 239, 242, 1);
+    --mid-color: rgba(194, 200, 205, 1);
+    --gray-color: rgba(131, 137, 143, 1);
+    --dark-color: rgba(94, 100, 106, 1);
+    --black-color: rgba(25, 28, 31, 1);
+    --container-width: 1200px;
+    --gap-nav: 24px;
+    --gap-item: 32px;
+}
+h1, h2, h3, h4, h5, h6, p {
+    color: var(--black-color);
+
+}
+h1 {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 64px;
+}
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 56px;
+}
+h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+}
+h4 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+h5 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+h6 {
+     font-size: 16px;
+     font-weight: 600;
+     line-height: 24px;
+}
+.p18 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.p16 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.p14 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.p12 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.bold {
+    font-weight: 600;
+}
+.white {
+    color: var(--white-color);
+}
+button {
+    background-color: var(--primary-color);
+    padding: 20px 40px;
+    border-radius: 4px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    color: var(--white-color);
+    transition: background-color .3s ease;
+    cursor: pointer;
+    border: rgba(255, 255, 255, 0) 1px solid;
+}
+button:hover {
+    background-color: var(--hover-color);
+}
+button:disabled {
+    background-color: var(--disabled-color);
+}
+.whBtn {
+    background-color: var(--light-color);
+    color: var(--black-color);
+    transition: background-color .3s ease;
+}
+.whBtn:hover {
+    border: var(--mid-color) 1px solid;
+    background-color: var(--white-color);
+}
+.container {
+    max-width: var(--container-width);
+    width: 100%;
+    margin: 0 auto;
+}
+header, footer, main {
+    width: 100%;
+}
+/*----------------------------settings-----------------------------*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
