@@ -7,7 +7,7 @@ export const MainBlock = () => {
                     <h1 className="white">Говорят, никогда не поздно сменить профессию</h1>
                     <p className="p18 white">Сделай круто тестовое задание и у тебя получится</p>
                 </div>
-                <button className="whBtn">Проще простого!</button>
+                <button className="btn whBtn">Проще простого!</button>
             </div>
         </div>
     )

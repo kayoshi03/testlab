@@ -85,7 +85,7 @@ h6 {
 .white {
     color: var(--white-color);
 }
-button {
+.btn {
     background-color: var(--primary-color);
     padding: 20px 40px;
     border-radius: 4px;
@@ -97,10 +97,10 @@ button {
     cursor: pointer;
     border: rgba(255, 255, 255, 0) 1px solid;
 }
-button:hover {
+.btn:hover {
     background-color: var(--hover-color);
 }
-button:disabled {
+.btn:disabled {
     background-color: var(--disabled-color);
 }
 .whBtn {
