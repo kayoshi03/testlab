@@ -4,6 +4,7 @@ import {GuideBlock} from "./components/GuideBlock.tsx";
 import {Footer} from "./components/Footer.tsx";
 import {ThridBlock} from "./components/ThridBlock.tsx";
 import {SliderBlock} from "./components/SliderBlock.tsx";
+import {AccardionBlock} from "./components/AccardionBlock.tsx";
 
 function App() {
 
@@ -15,6 +16,8 @@ function App() {
             <GuideBlock/>
             <ThridBlock/>
             <SliderBlock/>
+            <AccardionBlock/>
+            <div></div>
         </main>
         <Footer/>
     </>

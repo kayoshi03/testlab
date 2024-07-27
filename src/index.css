@@ -25,6 +25,9 @@
     --gap-nav: 24px;
     --gap-item: 32px;
 }
+html, body {
+    scroll-behavior: smooth
+}
 h1, h2, h3, h4, h5, h6, p {
     color: var(--black-color);
 

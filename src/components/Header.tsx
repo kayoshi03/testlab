@@ -6,9 +6,9 @@ export const Header = () => {
         <header>
             <div className="container">
                 <div className={style.wrapper}>
-                    <div className="logotype">
+                    <a href={"#"} className="logotype">
                         <h5 className="white">testLab</h5>
-                    </div>
+                    </a>
                     <Navbar/>
                 </div>
             </div>
