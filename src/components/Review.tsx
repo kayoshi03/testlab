@@ -1,3 +1,4 @@
+import style from "../scss/reviews.module.scss"
 export const Review = () => {
     return (
         <div className={style.item}>

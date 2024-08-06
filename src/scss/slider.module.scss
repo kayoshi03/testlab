@@ -10,23 +10,56 @@
     }
     .slider {
       display: flex;
-      .wrapper {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        .item {
-          max-width: 341px;
-          width: 100%;
-          height: 100px;
-          background: var(--white-color);
+      align-items: center;
+      gap: 20px;
+      button {
+        cursor: pointer;
+        height: 100%;
+      }
+      button:hover {
+        svg {
+          path {
+            fill: var(--primary-color)
+          }
         }
       }
-      .prev {
 
-      }
-      .next {
+      .card {
+        background-color: var(--white-color);
+        border-radius: 8px;
+        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+        height: var(--card-height);
+        padding: 22px;
+        transition: box-shadow .3s ease;
+        .content {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .profile {
+            display: flex;
+            gap: calc(var(--gap-item) / 2);
+            img {
+              width: 44px;
+              height: 44px;
+              border-radius: 50px;
+              object-fit: cover;
+            }
+            .text {
+              display: flex;
+              flex-direction: column;
+              gap: calc(var(--gap-item) / 8);
+              p {
+                color: var(--dark-color);
+              }
+            }
+          }
 
+        }
+        &:hover {
+          box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.1);
+        }
       }
     }
   }

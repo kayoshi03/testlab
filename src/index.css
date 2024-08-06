@@ -24,6 +24,7 @@
     --container-width: 1200px;
     --gap-nav: 24px;
     --gap-item: 32px;
+    --card-height: 316px;
 }
 html, body {
     scroll-behavior: smooth

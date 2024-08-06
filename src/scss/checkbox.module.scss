@@ -1,0 +1,33 @@
+.checkbox {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: fit-content;
+  input {
+    display: none;
+  }
+  span {
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--mid-color);
+    border-radius: 4px;
+    transition:background-color, border-color .3s ease;
+  }
+  .check {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    position: relative;
+    &:before {
+      content: "";
+      top: 6px;
+      left: 4px;
+      position: absolute;
+      background-image: url("../assets/check.svg");
+      background-repeat: no-repeat;
+      z-index: 10;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

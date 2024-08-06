@@ -2,7 +2,7 @@ import style from "../scss/thrid.module.scss"
 import image from "../assets/thrid.png"
 export const ThridBlock = () => {
     return (
-        <div className={style.thrid}>
+        <div id="third" className={style.thrid}>
             <div className="container">
                 <div className={style.wrapper}>
                     <div className={style.text}>

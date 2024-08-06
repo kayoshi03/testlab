@@ -1,0 +1,18 @@
+.input {
+  background-color: var(--extraligth-color);
+  border-radius: 4px;
+  padding: 16px;
+  input {
+    width: 100%;
+    background-color: var(--extraligth-color)!important;
+    color: var(--black-color);
+    &::placeholder {
+      color: var(--dark-color);
+    }
+    &:focus-visible {
+      border: none;
+      outline: none !important;
+    }
+  }
+
+}

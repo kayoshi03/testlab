@@ -1,0 +1,14 @@
+.reviews {
+  background: var(--extraligth-color);
+  padding: 68px 0;
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap-item);
+    .item {
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-nav);
+    }
+  }
+}

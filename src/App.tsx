@@ -6,6 +6,7 @@ import {ThridBlock} from "./components/ThridBlock.tsx";
 import {SliderBlock} from "./components/SliderBlock.tsx";
 import {AccardionBlock} from "./components/AccardionBlock.tsx";
 import {ReviewsBlock} from "./components/ReviewsBlock.tsx";
+import {FormBlock} from "./components/FormBlock.tsx";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <SliderBlock/>
             <AccardionBlock/>
             <ReviewsBlock/>
+            <FormBlock/>
         </main>
         <Footer/>
     </>
