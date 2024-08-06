@@ -10,5 +10,57 @@ header {
       display: flex;
       gap: 10px;
     }
+    .burger {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 9px 0;
+    .wrapper {
+      align-items: center;
+      padding: 0 0 0 16px;
+      .logotype {
+        z-index: 11;
+      }
+        nav {
+          display: none;
+        }
+      .burger {
+        width: 62px;
+        height: 62px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 11;
+      }
+      .menu {
+        padding-top: 80px;
+         background: white;
+        height: 100vh;
+         width: 100%;
+         position: absolute;
+          z-index: 10;
+          top: 0;
+          left: 0;
+        .list {
+          padding: 0 20px;
+          .item {
+            padding: 16px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid var(--light-color);
+            border-bottom: 1px solid var(--light-color);
+            p {
+              color: var(--gray-color);
+            }
+          }
+        }
+       }
+    }
   }
 }

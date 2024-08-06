@@ -17,3 +17,12 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .form {
+    margin-bottom: 56px;
+    .wrapper {
+      padding: 0 20px;
+    }
+  }
+}

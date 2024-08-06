@@ -12,3 +12,15 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .reviews {
+    padding: 20px 20px 32px;
+    .wrapper {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      .item {
+        gap: 46px;
+      }
+    }
+  }
+}

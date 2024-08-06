@@ -1,6 +1,6 @@
 .swiper {
   width: 1087px;
-  padding: 0 12px 66px;
+  padding: 0 13px 66px;
   .swiper-slide {
     height: 100%;
   }
@@ -9,5 +9,12 @@
   }
   .swiper-pagination-bullet {
     background: var(--mid-color);
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper {
+    width: 768px;
+    padding: 0 20px 66px;
   }
 }

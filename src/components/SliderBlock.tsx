@@ -43,7 +43,6 @@ const reviews = [
 
 export const SliderBlock = () => {
     const [slider, setSlider] = useState(null)
-
     return(
         <div className={style.slide}>
             <div className="container">
@@ -62,6 +61,17 @@ export const SliderBlock = () => {
                             modules={[Pagination, Navigation, A11y]}
                             pagination={{clickable: true}}
                             slidesPerView={3}
+                            breakpoints={{
+                                1440: {
+                                  slidesPerView: 3,
+                                    spaceBetween: 32
+                                },
+                                768: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 24
+                                },
+                            }}
+
                             onSwiper={(swiper) => setSlider(swiper)}
                         >
                             {

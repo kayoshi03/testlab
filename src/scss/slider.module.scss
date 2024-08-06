@@ -64,3 +64,14 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .slide {
+    .wrapper {
+      padding: 33px 0;
+      button {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,10 +1,9 @@
 import style from "../scss/accardion.module.scss"
 import {useRef, useState} from "react";
-export const AccardionItem = () => {
+export const AccardionItem = ({question, answer}) => {
     const [show, setShow] = useState(false)
     const handlerShow = () => {
         setShow((prev) => !prev)
-        console.log(show)
     }
     const contentEl = useRef();
 
@@ -12,7 +11,7 @@ export const AccardionItem = () => {
         <li className={style.accord_item}>
             <div className={style.question} onClick={handlerShow}>
                 <p className="p18 bold">
-                    Подтверждено: сознание наших соотечественников не замутнено пропагандой?
+                    {question}
                 </p>
                 <span>
                     <svg style={show ? {transform: "rotate(45deg)"}: {}} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,11 +26,10 @@ export const AccardionItem = () => {
                 show
                     ? {height: contentEl.current.scrollHeight}
                     : {height: "0px"}
-            } className={`${style.answer_wrapper} `}>
+                }
+                 className={`${style.answer_wrapper} `}>
                 <p className="p18">
-                    В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания по
-                    разработке дальнейших направлений развития. Предварительные выводы неутешительны: экономическая
-                    повестка сегодняшнего дня говорит о возможностях существующих финансовых и административных условий.
+                    {answer}
                 </p>
             </div>
         </li>

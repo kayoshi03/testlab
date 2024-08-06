@@ -31,7 +31,6 @@ html, body {
 }
 h1, h2, h3, h4, h5, h6, p {
     color: var(--black-color);
-
 }
 h1 {
     font-size: 52px;
@@ -130,4 +129,14 @@ main {
     display: flex;
     flex-direction: column;
     gap: 80px;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --container-width: 768px;
+        --gap-item: 24px;
+    }
+    main {
+        gap: 56px ;
+    }
 }

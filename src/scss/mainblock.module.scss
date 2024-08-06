@@ -39,3 +39,20 @@
     color: var(--white-color);
   }
 }
+
+@media (max-width: 768px) {
+  .main {
+    --text-width: 467px;
+    .wrapper {
+      gap: 40px;
+      .text {
+        gap: 17px;
+        h1 {
+          font-size: 32px;
+          font-weight: 600;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+}

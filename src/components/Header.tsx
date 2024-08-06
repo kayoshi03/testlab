@@ -1,7 +1,10 @@
 import style from "../scss/header.module.scss"
 import {Navbar} from "./Navbar.tsx";
+import {BurgerMenu} from "./BurgerMenu.tsx";
+import {useState} from "react";
 
 export const Header = () => {
+    const [show, setShow] = useState(false)
     return (
         <header>
             <div className="container">
@@ -11,9 +14,10 @@ export const Header = () => {
                             <circle cx="25" cy="12" r="12" fill="#ECEFF2"/>
                             <circle cx="12" cy="12" r="12" fill="#2A6CEA"/>
                         </svg>
-                        <h5 className="white">testLab</h5>
+                        <h5 className={show ? "" : "white"}>testLab</h5>
                     </a>
                     <Navbar/>
+                    <BurgerMenu setShow={setShow} show={show}/>
                 </div>
             </div>
         </header>
