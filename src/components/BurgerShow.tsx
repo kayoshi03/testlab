@@ -1,5 +1,4 @@
 import style from "../scss/header.module.scss"
-import {useRef} from "react";
 
 const data = [
     {

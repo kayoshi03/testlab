@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import {BurgerShow} from "./BurgerShow.tsx";
 import style from "../scss/header.module.scss";
 
